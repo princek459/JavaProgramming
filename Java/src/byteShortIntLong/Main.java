@@ -15,6 +15,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		//Integer Example
+		int myTotalValue = 10000;
 		
 		int myMinIntValue = Integer.MIN_VALUE;
 		int myMaxIntValue = Integer.MAX_VALUE;
@@ -50,6 +51,20 @@ public class Main {
 		System.out.println(bigLongLiteralValue);
 		
 		short bigShortLiteralValue = 32767;
+		
+		
+		
+		int myTotal = (myMinIntValue / 2);
+		
+		byte myNewByteValue = (byte) (myMinByteValue / 2);
+		
+		short myNewSHortValue = (short) (myMinShortValue / 2);
+		
+		
+		
+		
+		
+		
 		
 	}
 
