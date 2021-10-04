@@ -42,8 +42,14 @@ public class Main {
         // create getters only for this using code generation of intellij as setters wont be needed
         // test and confirm it works.
 		
+		VipCustomer person = new VipCustomer("Darcy B", 3000.00, "darcy@email.com");
+		System.out.println(person.getVipName());
 		
+		VipCustomer person1 = new VipCustomer();
+		System.out.println(person1.getVipName());
 		
+		VipCustomer person2 = new VipCustomer("Tim B", 3000.00, "Tim@email.com");
+		System.out.println(person2.getVipName());
 	}
 
 }

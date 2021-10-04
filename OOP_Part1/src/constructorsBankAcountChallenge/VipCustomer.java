@@ -13,6 +13,25 @@ public class VipCustomer {
 	
 	private String vipName;
 	private double creditLimit;
+	private String vipEmailAddress;
+	
+	
+	public VipCustomer() {
+		this("Default name", 50000.00, "default@mail.com");
+	}
+	
+	public VipCustomer(String vipName, double creditLimit) {
+		super();
+		this.vipName = vipName;
+		this.creditLimit = creditLimit;
+	}
+
+	public VipCustomer(String vipName, double creditLimit, String vipEmailAddress) {
+		this.vipName = vipName;
+		this.creditLimit = creditLimit;
+		this.vipEmailAddress = vipEmailAddress;
+	}
+	
 	public String getVipName() {
 		return vipName;
 	}
@@ -22,7 +41,7 @@ public class VipCustomer {
 	public String getVipEmailAddress() {
 		return vipEmailAddress;
 	}
-	private String vipEmailAddress;
+	
 	
 	
 	
