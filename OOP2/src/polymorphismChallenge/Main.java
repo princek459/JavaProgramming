@@ -85,9 +85,62 @@ class Ford extends Car {
 		return "Ford -> brake()";
 	}
 	
+}
+
+class Honda extends Car {
+
+	public Honda(int cylinders, String name) {
+		super(cylinders, name);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String startEngine() {
+		// TODO Auto-generated method stub
+		return "Honda -> startEngine()";
+	}
+
+	@Override
+	public String accelerate() {
+		// TODO Auto-generated method stub
+		return "Honda -> accelerate()";
+	}
+
+	@Override
+	public String brake() {
+		// TODO Auto-generated method stub
+		return "Honda -> brake()";
+	}
 	
-	
-	
+}
+
+class Holden extends Car {
+
+	public Holden(int cylinders, String name) {
+		super(cylinders, name);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String startEngine() {
+		
+		
+		// Another way of getting the class and then the name of the class
+		
+		return getClass().getSimpleName() + " -> startEngine()";
+	}
+
+	@Override
+	public String accelerate() {
+		// TODO Auto-generated method stub
+		return getClass().getSimpleName() + " -> accelerate()";
+	}
+
+	@Override
+	public String brake() {
+		// TODO Auto-generated method stub
+		return getClass().getSimpleName() + " -> brake()";
+	}
 	
 }
 
@@ -106,6 +159,16 @@ public class Main {
 		System.out.println(ford.startEngine());
 		System.out.println(ford.accelerate());
 		System.out.println(ford.brake());
+		
+		Honda honda = new Honda(6,"Civic");
+		System.out.println(honda.startEngine());
+		System.out.println(honda.accelerate());
+		System.out.println(honda.brake());
+		
+		Holden holden = new Holden(6,"Civic");
+		System.out.println(holden.startEngine());
+		System.out.println(holden.accelerate());
+		System.out.println(holden.brake());
 	    
 
 	}
