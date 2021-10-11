@@ -26,9 +26,30 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		Bank bank = new Bank("Santander");
+		
+		bank.addBranch("Cardiff");
+		
+		bank.addCustomers("Cardiff", "Prince", 33.75);
+		bank.addCustomers("Cardiff", "Darcy", 453.75);
+		bank.addCustomers("Cardiff", "Chris", 56.75);
+		
+		bank.addBranch("London");
+		bank.addCustomers("London", "David", 87.42);
+		
+		bank.addCustomers("Cardiff", "Prince", 540.75);
+		bank.addCustomers("Cardiff", "Darcy", 56.75);
+		bank.addCustomers("Cardiff", "Chris", 89.89);
+		
+		bank.listCustomers("Cardiff", true);
+		
 
 	}
 
+	
+	
+	
 	
 	
 	
